@@ -3,13 +3,16 @@
 <meta charset="UTF-8" />
 <head>
 <title>xyz</title>
-<script src="/jquery.min.js"></script>
-<script src="/jquery.pjax.min.1.js"></script>
+<script src="/final/pjax/jquery.min.js"></script>
+<script src="/final/pjax/jquery.pjax.min.1.js"></script>
 <script>
-    $(function(){
-      $(document).pjax('ul a', '#main')
+ $(function(){
+    $.pjax({
+        area : '#main',
+        link : 'a.pjax'
     });
-  </script>
+});
+</script>
 </head>
 <body>
 <p>basic pjax demo page</p>
